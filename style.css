@@ -1,0 +1,173 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    border-bottom:1px solid #222;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:30px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    opacity:0.6;
+}
+
+/* Hero */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 60px;
+    min-height:90vh;
+}
+
+.hero-text h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.hero-text h2{
+    font-weight:300;
+    margin-bottom:30px;
+    opacity:0.7;
+}
+
+/* Hero Image */
+.hero-image img{
+    width:320px;
+    border-radius:10px;
+    filter:grayscale(100%);
+    transition:0.3s;
+}
+
+.hero-image img:hover{
+    filter:grayscale(0%);
+}
+
+/* About Section */
+.about{
+    padding:80px 60px;
+    text-align:center;
+    border-top:1px solid #222;
+}
+
+.about h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.about p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    opacity:0.9;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    padding:12px 35px;
+    border:1px solid #fff;
+    color:#fff;
+    text-decoration:none;
+    transition:0.3s;
+    margin-bottom:15px;
+}
+
+.btn:hover{
+    background:#fff;
+    color:#000;
+}
+
+/* Social */
+.social{
+    margin-top:20px;
+}
+
+.social.center{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.social a{
+    color:#fff;
+    font-size:22px;
+    transition:0.3s;
+}
+
+.social a:hover{
+    opacity:0.6;
+}
+
+/* Skills Section */
+.skills{
+    padding:80px 60px;
+    text-align:center;
+    border-top:1px solid #222;
+}
+
+.skills h2{
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.skill{
+    border:1px solid #fff;
+    padding:12px 30px;
+    transition:0.3s;
+    font-weight:bold;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.skill:hover{
+    background:#fff;
+    color:#000;
+}
+
+/* Responsive */
+@media(max-width:900px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-image{
+        margin-top:40px;
+    }
+}
