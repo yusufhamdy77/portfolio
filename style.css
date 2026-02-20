@@ -1,4 +1,3 @@
-/* Reset */
 *{
     margin:0;
     padding:0;
@@ -11,7 +10,6 @@ body{
     color:#fff;
 }
 
-/* Header */
 header{
     display:flex;
     justify-content:space-between;
@@ -37,7 +35,6 @@ nav a:hover{
     opacity:0.6;
 }
 
-/* Hero */
 .hero{
     display:flex;
     justify-content:space-between;
@@ -57,7 +54,6 @@ nav a:hover{
     opacity:0.7;
 }
 
-/* Hero Image */
 .hero-image img{
     width:320px;
     border-radius:10px;
@@ -69,7 +65,6 @@ nav a:hover{
     filter:grayscale(0%);
 }
 
-/* About Section */
 .about{
     padding:80px 60px;
     text-align:center;
@@ -91,7 +86,6 @@ nav a:hover{
     opacity:0.9;
 }
 
-/* Button */
 .btn{
     display:inline-block;
     padding:12px 35px;
@@ -107,7 +101,6 @@ nav a:hover{
     color:#000;
 }
 
-/* Social */
 .social{
     margin-top:20px;
 }
@@ -128,7 +121,6 @@ nav a:hover{
     opacity:0.6;
 }
 
-/* Skills Section */
 .skills{
     padding:80px 60px;
     text-align:center;
@@ -160,7 +152,6 @@ nav a:hover{
     color:#000;
 }
 
-/* Responsive */
 @media(max-width:900px){
     .hero{
         flex-direction:column;
@@ -170,4 +161,5 @@ nav a:hover{
     .hero-image{
         margin-top:40px;
     }
+
 }
