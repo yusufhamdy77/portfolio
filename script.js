@@ -92,7 +92,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 
-/* Close mobile menu */
+/* Close menu after clicking link */
 
 document.querySelectorAll(".nav-link").forEach(link => {
 
@@ -123,10 +123,12 @@ window.addEventListener("scroll", () => {
 
     sections.forEach(section => {
 
-        const sectionTop = section.offsetTop - 150;
+        const sectionTop = section.offsetTop - 160;
 
         if (window.scrollY >= sectionTop) {
+
             current = section.getAttribute("id");
+
         }
 
     });
@@ -136,7 +138,9 @@ window.addEventListener("scroll", () => {
         link.classList.remove("active");
 
         if (link.getAttribute("href") === `#${current}`) {
+
             link.classList.add("active");
+
         }
 
     });
@@ -148,7 +152,8 @@ window.addEventListener("scroll", () => {
    SCROLL PROGRESS
 ========================= */
 
-const progress = document.querySelector(".scroll-progress");
+const progress =
+    document.querySelector(".scroll-progress");
 
 window.addEventListener("scroll", () => {
 
@@ -167,7 +172,7 @@ window.addEventListener("scroll", () => {
 
 
 /* =========================
-   REVEAL ON SCROLL
+   REVEAL ANIMATION
 ========================= */
 
 const revealElements =
@@ -259,7 +264,7 @@ window.addEventListener("scroll", () => {
 
 
 /* =========================
-   IMAGE PARALLAX
+   HERO IMAGE PARALLAX
 ========================= */
 
 const heroImage =
@@ -301,8 +306,11 @@ cards.forEach(card => {
         const y =
             event.clientY - rect.top;
 
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
+        const centerX =
+            rect.width / 2;
+
+        const centerY =
+            rect.height / 2;
 
         const rotateX =
             ((y - centerY) / centerY) * -4;
@@ -329,11 +337,9 @@ cards.forEach(card => {
 
 
 /* =========================
-   CURRENT YEAR
+   CONSOLE MESSAGE
 ========================= */
 
-const year = new Date().getFullYear();
-
 console.log(
-    `Yousef Portfolio | ${year}`
+    "Yousef Hamdy | Backend Developer | C# | ASP.NET Core | SQL Server"
 );
