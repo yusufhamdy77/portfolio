@@ -1,75 +1,753 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Yousef Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Yousef Hamdy | Backend Developer</title>
+
+    <meta name="description"
+        content="Yousef Hamdy - Computer Science Student and Backend Developer specialized in C#, ASP.NET Core, SQL Server and REST APIs.">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <div class="logo">YOUSEF</div>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
 
-<section class="hero">
-    <div class="hero-text">
-        <h1>Yousef Hamdy</h1>
-        <h2>Backend Developer & Student</h2>
-    </div>
-    <div class="hero-image">
-        <img src="photo_2026-01-31_15-58-12.jpg" alt="profile">
-    </div>
-</section>
 
-<section class="about" id="about">
-    <h2>About Me</h2>
-    <p>
-    I'm a dedicated student enrolled in three colleges, deeply passionate about Backend Development and software engineering. Skilled in OOP, DSA, and database design, I have hands-on experience building projects using C#, .NET, and SQL. I enjoy problem-solving, optimizing code, and exploring emerging technologies to deliver efficient solutions. Motivated, disciplined, and proactive, I continuously seek opportunities to expand my technical expertise and contribute meaningfully to innovative projects.
-    </p>
-    <a href="https://www.linkedin.com/in/youssif-hamdy-elshazly-25481a2a1" target="_blank" class="btn">Connect with me</a>
-    
-    <div class="social center">
-        <a href="https://www.facebook.com/share/17a8UgwFRi/?mibextid=wwXIfr" target="_blank">
-            <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/jyusuf7?igsh=OTVyZTExOGdtcnd6" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://github.com/yusufhamdy77" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="mailto:yousifhamdy50@gmail.com">
-            <i class="fas fa-envelope"></i>
-        </a>
-        <a href="tel:01068266897">
-            <i class="fas fa-phone"></i>
-        </a>
+    <!-- Background -->
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
-</section>
 
-<section class="skills" id="skills">
-    <h2>My Skills</h2>
-    <div class="skills-container">
-        <div class="skill">C++</div>
-        <div class="skill">C#</div>
-        <div class="skill">ASP .NET</div>
-        <div class="skill">Network</div>
-        <div class="skill">DSA</div>
-        <div class="skill">OOP</div>
-        <div class="skill">Database</div>
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-    </div>
-</section>
+
+    <!-- NAVBAR -->
+
+    <header id="header">
+
+        <a href="#home" class="logo">
+            YOUSEF<span>.</span>
+        </a>
+
+        <nav id="navbar">
+
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link">Contact</a>
+
+        </nav>
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero section" id="home">
+
+        <div class="hero-content reveal">
+
+            <p class="hero-small">
+                <span></span>
+                Hello, I'm
+            </p>
+
+            <h1>
+                Yousef Hamdy
+            </h1>
+
+            <h2>
+                I'm a <span id="typing"></span>
+            </h2>
+
+            <p class="hero-description">
+                Computer Science student and Backend Developer focused on
+                building scalable APIs, database-driven applications,
+                and clean backend architectures.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    View My Work
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
+
+            </div>
+
+
+            <div class="quick-info">
+
+                <div>
+                    <i class="fas fa-code"></i>
+                    <span>Backend Development</span>
+                </div>
+
+                <div>
+                    <i class="fas fa-database"></i>
+                    <span>Database Design</span>
+                </div>
+
+                <div>
+                    <i class="fas fa-server"></i>
+                    <span>REST APIs</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image reveal">
+
+            <div class="image-glow"></div>
+
+            <div class="image-container">
+
+                <!-- Put your image here -->
+                <img src="profile.jpg" alt="Yousef Hamdy">
+
+            </div>
+
+            <div class="floating-card card-one">
+                <i class="fas fa-code"></i>
+                <span>C#</span>
+            </div>
+
+            <div class="floating-card card-two">
+                <i class="fas fa-database"></i>
+                <span>SQL</span>
+            </div>
+
+            <div class="floating-card card-three">
+                <i class="fas fa-layer-group"></i>
+                <span>.NET</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about section" id="about">
+
+        <div class="section-title reveal">
+
+            <span>01</span>
+
+            <h2>About Me</h2>
+
+            <p>
+                Get to know me and what I do.
+            </p>
+
+        </div>
+
+
+        <div class="about-container">
+
+            <div class="about-text reveal">
+
+                <h3>
+                    Building the backend behind great applications.
+                </h3>
+
+                <p>
+                    I'm a Computer Science student and Backend Developer
+                    passionate about software engineering and backend systems.
+                </p>
+
+                <p>
+                    My main focus is developing backend applications using
+                    <strong>C#</strong>,
+                    <strong>ASP.NET Core</strong>,
+                    <strong>SQL Server</strong> and
+                    <strong>Entity Framework Core</strong>.
+                </p>
+
+                <p>
+                    I enjoy designing databases, building RESTful APIs,
+                    solving programming problems, and writing clean,
+                    maintainable code using OOP, SOLID principles and
+                    design patterns.
+                </p>
+
+                <p>
+                    I'm continuously improving my technical skills and
+                    working on practical projects to become a stronger
+                    backend engineer.
+                </p>
+
+
+                <div class="about-stats">
+
+                    <div>
+                        <strong>Backend</strong>
+                        <span>Development</span>
+                    </div>
+
+                    <div>
+                        <strong>.NET</strong>
+                        <span>Technology</span>
+                    </div>
+
+                    <div>
+                        <strong>SQL</strong>
+                        <span>Database</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-box reveal">
+
+                <div class="code-window">
+
+                    <div class="window-header">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                    <div class="code-content">
+
+<pre><code>
+<span class="purple">public class</span> <span class="blue">Developer</span>
+{
+    <span class="purple">public string</span> Name =>
+        <span class="green">"Yousef Hamdy"</span>;
+
+    <span class="purple">public string</span> Role =>
+        <span class="green">"Backend Developer"</span>;
+
+    <span class="purple">public string[]</span> Skills =>
+    {
+        <span class="green">"C#"</span>,
+        <span class="green">"ASP.NET Core"</span>,
+        <span class="green">"SQL Server"</span>,
+        <span class="green">"EF Core"</span>
+    };
+}
+</code></pre>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section class="skills section" id="skills">
+
+        <div class="section-title reveal">
+
+            <span>02</span>
+
+            <h2>Technical Skills</h2>
+
+            <p>
+                Technologies and concepts I work with.
+            </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+            <div class="skill-card reveal">
+
+                <i class="fas fa-code"></i>
+
+                <h3>Programming</h3>
+
+                <p>
+                    C# • C++ • OOP • DSA
+                </p>
+
+            </div>
+
+
+            <div class="skill-card reveal">
+
+                <i class="fas fa-server"></i>
+
+                <h3>Backend</h3>
+
+                <p>
+                    ASP.NET Core • Web API • REST APIs
+                </p>
+
+            </div>
+
+
+            <div class="skill-card reveal">
+
+                <i class="fas fa-database"></i>
+
+                <h3>Database</h3>
+
+                <p>
+                    SQL Server • EF Core • Database Design
+                </p>
+
+            </div>
+
+
+            <div class="skill-card reveal">
+
+                <i class="fas fa-cubes"></i>
+
+                <h3>Software Engineering</h3>
+
+                <p>
+                    SOLID • Design Patterns • Clean Code
+                </p>
+
+            </div>
+
+
+            <div class="skill-card reveal">
+
+                <i class="fab fa-git-alt"></i>
+
+                <h3>Tools</h3>
+
+                <p>
+                    Git • GitHub • Visual Studio • VS Code
+                </p>
+
+            </div>
+
+
+            <div class="skill-card reveal">
+
+                <i class="fas fa-network-wired"></i>
+
+                <h3>Networking</h3>
+
+                <p>
+                    CCNA Fundamentals • Linux
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section class="projects section" id="projects">
+
+        <div class="section-title reveal">
+
+            <span>03</span>
+
+            <h2>Featured Projects</h2>
+
+            <p>
+                Some of the projects I've worked on.
+            </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <article class="project-card reveal">
+
+                <div class="project-number">
+                    01
+                </div>
+
+                <div class="project-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <h3>Shopping System</h3>
+
+                <p>
+                    A C# based shopping system demonstrating
+                    OOP, generics, collections, cart management
+                    and undo functionality.
+                </p>
+
+                <div class="project-tech">
+
+                    <span>C#</span>
+                    <span>OOP</span>
+                    <span>Generics</span>
+
+                </div>
+
+                <a href="https://github.com/yusufhamdy77"
+                    target="_blank"
+                    class="project-link">
+
+                    View Project
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </article>
+
+
+            <article class="project-card reveal">
+
+                <div class="project-number">
+                    02
+                </div>
+
+                <div class="project-icon">
+                    <i class="fas fa-address-book"></i>
+                </div>
+
+                <h3>Contacts Management API</h3>
+
+                <p>
+                    Database-driven contacts management system
+                    using C#, ADO.NET, SQL Server and layered
+                    architecture.
+                </p>
+
+                <div class="project-tech">
+
+                    <span>C#</span>
+                    <span>SQL Server</span>
+                    <span>ADO.NET</span>
+
+                </div>
+
+                <a href="https://github.com/yusufhamdy77"
+                    target="_blank"
+                    class="project-link">
+
+                    View Project
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </article>
+
+
+            <article class="project-card reveal">
+
+                <div class="project-number">
+                    03
+                </div>
+
+                <div class="project-icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+
+                <h3>Order Notification System</h3>
+
+                <p>
+                    Event-driven C# application demonstrating
+                    events, notifications and clean separation
+                    between components.
+                </p>
+
+                <div class="project-tech">
+
+                    <span>C#</span>
+                    <span>Events</span>
+                    <span>OOP</span>
+
+                </div>
+
+                <a href="https://github.com/yusufhamdy77"
+                    target="_blank"
+                    class="project-link">
+
+                    View Project
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+
+    <section class="experience section" id="experience">
+
+        <div class="section-title reveal">
+
+            <span>04</span>
+
+            <h2>Experience & Training</h2>
+
+            <p>
+                My technical learning journey.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        Training
+                    </span>
+
+                    <h3>Backend Development</h3>
+
+                    <h4>.NET Ecosystem</h4>
+
+                    <p>
+                        Hands-on learning and project development
+                        using C#, ASP.NET Core, SQL Server,
+                        Entity Framework Core, OOP, SOLID and
+                        REST API concepts.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        Training
+                    </span>
+
+                    <h3>NTI Training</h3>
+
+                    <h4>Technical Development</h4>
+
+                    <p>
+                        Practical technical training focused on
+                        programming, software development and
+                        building real-world technical skills.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        Education
+                    </span>
+
+                    <h3>Computer Science</h3>
+
+                    <h4>Computer Science Student</h4>
+
+                    <p>
+                        Studying computer science with a focus on
+                        programming, algorithms, databases,
+                        software engineering and problem solving.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact section" id="contact">
+
+        <div class="section-title reveal">
+
+            <span>05</span>
+
+            <h2>Let's Connect</h2>
+
+            <p>
+                Have a project or opportunity? Let's talk.
+            </p>
+
+        </div>
+
+
+        <div class="contact-container reveal">
+
+            <div class="contact-info">
+
+                <h3>
+                    Let's build something great.
+                </h3>
+
+                <p>
+                    I'm always interested in new projects,
+                    collaborations, internships and backend
+                    development opportunities.
+                </p>
+
+
+                <a href="mailto:yousifhamdy50@gmail.com"
+                    class="contact-item">
+
+                    <i class="fas fa-envelope"></i>
+
+                    <span>
+                        yousifhamdy50@gmail.com
+                    </span>
+
+                </a>
+
+
+                <a href="https://www.linkedin.com/in/youssif-hamdy-elshazly-25481a2a1"
+                    target="_blank"
+                    class="contact-item">
+
+                    <i class="fab fa-linkedin"></i>
+
+                    <span>
+                        LinkedIn
+                    </span>
+
+                </a>
+
+
+                <a href="https://github.com/yusufhamdy77"
+                    target="_blank"
+                    class="contact-item">
+
+                    <i class="fab fa-github"></i>
+
+                    <span>
+                        GitHub
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <i class="fas fa-paper-plane"></i>
+
+                <h3>
+                    Interested in working together?
+                </h3>
+
+                <p>
+                    Feel free to reach out through email or
+                    LinkedIn.
+                </p>
+
+                <a href="mailto:yousifhamdy50@gmail.com"
+                    class="btn primary-btn">
+
+                    Send Message
+                    <i class="fas fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            YOUSEF<span>.</span>
+        </div>
+
+        <p>
+            Designed & Built by Yousef Hamdy
+        </p>
+
+        <div class="footer-social">
+
+            <a href="https://github.com/yusufhamdy77" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/youssif-hamdy-elshazly-25481a2a1"
+                target="_blank">
+
+                <i class="fab fa-linkedin"></i>
+
+            </a>
+
+            <a href="mailto:yousifhamdy50@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Back To Top -->
+
+    <button id="backTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <script src="script.js"></script>
 
 </body>
 
